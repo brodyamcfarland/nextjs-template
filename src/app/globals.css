@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+     --background: white;
+     --foreground: black;
+}
+
+.mainContainer {
+     @apply flex flex-col rounded-md border-2 dark:border-white/30 border-black bg-[#f0f0f0] dark:bg-black shadow-md items-center justify-center;
+}
