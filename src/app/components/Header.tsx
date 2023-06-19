@@ -12,7 +12,7 @@ const Header = () => {
      const menuButtonRef = useRef<HTMLButtonElement>(null);
 
      return (
-          <header className="relative flex justify-between w-full items-center max-w-7xl mx-auto py-6 px-6">
+          <header className="flex justify-between w-full items-center max-w-7xl mx-auto py-6 px-6 sticky top-0 z-50">
                <Link
                     href={"/"}
                     className="opacity-70 hover:opacity-100 duration-300"

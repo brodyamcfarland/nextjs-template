@@ -19,7 +19,7 @@ export default function RootLayout({
      return (
           <html lang="en" suppressHydrationWarning>
                <body
-                    className={`flex flex-col ${inter.className} h-screen w-full relative overflow-hidden`}
+                    className={`flex flex-col ${inter.className} min-h-screen w-full relative overflow-x-hidden`}
                >
                     <StyleProvider>
                          <Header />
