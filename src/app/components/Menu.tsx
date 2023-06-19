@@ -1,11 +1,5 @@
 import Link from "next/link";
-import React, {
-     Dispatch,
-     RefObject,
-     SetStateAction,
-     useEffect,
-     useRef,
-} from "react";
+import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
 
 interface MenuProps {
      setShowMenu: Dispatch<SetStateAction<boolean>>;
@@ -21,7 +15,6 @@ const Menu = ({ setShowMenu, menuButtonRef }: MenuProps) => {
                     menuButtonRef.current &&
                     menuButtonRef.current.contains(event.target as Node)
                ) {
-                    // Clicked on the menu button, do not close the menu
                     return;
                }
 
@@ -29,7 +22,6 @@ const Menu = ({ setShowMenu, menuButtonRef }: MenuProps) => {
                     menuRef.current &&
                     !menuRef.current.contains(event.target as Node)
                ) {
-                    // Clicked outside of the menu, close the menu
                     setShowMenu(false);
                }
           };
@@ -44,35 +36,35 @@ const Menu = ({ setShowMenu, menuButtonRef }: MenuProps) => {
      return (
           <nav
                ref={menuRef}
-               className="absolute flex flex-col gap-3 z-20 dark:bg-white/10 bg-black/40 backdrop-blur-sm shadow-md w-32 top-[76px] right-6 p-2 rounded-lg text-sm items-center justify-center"
+               className="absolute flex flex-col gap-4 z-20 dark:bg-white/10 bg-black/40 backdrop-blur-sm shadow-md w-32 top-[76px] right-6 p-4 rounded-lg text-sm items-center justify-center"
           >
                <Link
                     href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white border border-transparent hover:border-white/50 duration-150 py-1"
+                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
                >
                     Home
                </Link>
                <Link
                     href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white border border-transparent hover:border-white/50 duration-150 py-1"
+                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
                >
                     Link 1
                </Link>
                <Link
                     href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white border border-transparent hover:border-white/50 duration-150 py-1"
+                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
                >
                     Link 2
                </Link>
                <Link
                     href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white border border-transparent hover:border-white/50 duration-150 py-1"
+                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
                >
                     Link 3
                </Link>
                <Link
                     href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white border border-transparent hover:border-white/50 duration-150 py-1"
+                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
                >
                     Link 4
                </Link>
