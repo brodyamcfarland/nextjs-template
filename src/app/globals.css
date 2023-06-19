@@ -10,3 +10,7 @@
 .mainContainer {
      @apply flex flex-col w-full 2xl:max-w-6xl xl:max-w-4xl lg:max-w-2xl rounded-lg border-2 dark:border-white/30 border-black bg-[#f0f0f0] dark:bg-black shadow-md items-center justify-center;
 }
+
+.menuLinks {
+     @apply shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1;
+}

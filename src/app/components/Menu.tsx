@@ -38,34 +38,19 @@ const Menu = ({ setShowMenu, menuButtonRef }: MenuProps) => {
                ref={menuRef}
                className="absolute flex flex-col gap-4 z-20 dark:bg-white/10 bg-black/40 backdrop-blur-sm shadow-md w-32 top-[76px] right-6 p-4 rounded-lg text-sm items-center justify-center"
           >
-               <Link
-                    href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
-               >
+               <Link href={"/"} className="menuLinks">
                     Home
                </Link>
-               <Link
-                    href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
-               >
+               <Link href={"/"} className="menuLinks">
                     Link 1
                </Link>
-               <Link
-                    href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
-               >
+               <Link href={"/"} className="menuLinks">
                     Link 2
                </Link>
-               <Link
-                    href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
-               >
+               <Link href={"/"} className="menuLinks">
                     Link 3
                </Link>
-               <Link
-                    href={"/"}
-                    className="shadow-md w-full text-center rounded-lg dark:bg-black/80 bg-white dark:border border-2 border-transparent dark:hover:border-white/50 hover:border-black duration-150 py-1"
-               >
+               <Link href={"/"} className="menuLinks">
                     Link 4
                </Link>
           </nav>
